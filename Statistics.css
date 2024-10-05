@@ -1,0 +1,161 @@
+/* General container styling */
+.statistics-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Grid container for statistics */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual statistic boxes */
+  .today-usage, .monthly-usage, .detail-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    color: #000; /* Default text color set to black */
+  }
+  
+  /* Hover effect for all statistic boxes */
+  .today-usage:hover, .monthly-usage:hover, .detail-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  .today-usage p, .monthly-usage p, .detail-box p {
+    color: #000; /* Default text color set to black */
+  }
+  
+  /* Hover effect for all statistic boxes */
+  .today-usage:hover p, .monthly-usage:hover p, .detail-box:hover p {
+    color: white; /* Change text color to white on hover */
+  }
+  
+  /* Bar chart styles */
+  .bar-chart-container {
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .bar-chart-container {
+    margin-bottom: 30px;
+  }
+  
+  .bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bar {
+    width: 40px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .bar-chart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .bar {
+    width: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  .selected-month-info {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .bar-chart-container {
+    margin-bottom: 30px;
+  }
+  
+  .bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bar {
+    width: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .bar:hover {
+    background-color: #0056b3;
+    transform: scaleY(1.1);
+  }
+  
+  /* Hover effect for bars in the chart */
+  .bar:hover {
+    background-color: #0056b3; /* Darken the blue on hover */
+    transform: scaleY(1.1); /* Slightly stretch the bar on hover */
+  }
+  
+  /* Detail boxes styling */
+  .energy-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .detail-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    color: #000; /* Default text color set to black */
+  }
+  
+  /* Hover effect for detail boxes */
+  .detail-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #007bff;
+    color: white; /* Change text color to white on hover */
+  }
+  
+  /* Ensure the paragraph text inside the detail-box turns white on hover */
+  .detail-box:hover p {
+    color: white; /* Set text color to white when hovered */
+  }
+  
